@@ -3,7 +3,6 @@
 http://bitcoinrobot.cn/#/note?source=sw&thread=95
 
 cleos wallet unlock -n suishanwen
-PW5JVWjru985gLUvPoA5oXAuKNjqV3aqx4dttumTwWzyxRybE6GPn
 eosiocpp -o eosio.token2.wast eosio.token2.cpp
 eosiocpp -g eosio.token2.abi eosio.token2.cpp
 
