@@ -1,3 +1,7 @@
+基于高性能区块链网络(EOS)开发去中心化应用
+
+http://bitcoinrobot.cn/#/note?source=sw&thread=95
+
 cleos wallet unlock -n suishanwen
 PW5JVWjru985gLUvPoA5oXAuKNjqV3aqx4dttumTwWzyxRybE6GPn
 eosiocpp -o eosio.token2.wast eosio.token2.cpp
