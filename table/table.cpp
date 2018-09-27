@@ -1,5 +1,4 @@
 #include <eosiolib/eosio.hpp>
-#include <eosiolib/print.hpp>
 
 using namespace eosio;
 
@@ -315,7 +314,3 @@ private:
 };
 
 EOSIO_ABI( youvote, (version)(addpoll)(rmpoll)(status)(statusreset)(addpollopt)(rmpollopt)(vote))
-
-
-
-
