@@ -38,7 +38,7 @@ namespace eosio {
         void burn(account_name owner, asset quantity);
 
         /// @abi action
-        void burnitall(account_name owner, asset value);
+        void burnitall(account_name owner, string sym);
 
         /// @abi action
         void refund(account_name owner,asset value);

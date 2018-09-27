@@ -96,10 +96,11 @@ namespace eosio {
         sub_supply(value);
     }
 
-    void token::burnitall(account_name owner, asset value) {
+    void token::burnitall(account_name owner, string sym) {
+        symbol_type symbolType = string_to_symbol(4,sym.c_str());
         check_account(owner);
         accounts from_acnts(_self, owner);
-        const auto &from = from_acnts.get(value.symbol.name(), "no balance object found");
+        const auto &from = from_acnts.get(symbolType.name(), "no balance object found");
         from_acnts.erase(from);
         sub_supply(from.balance);
     }
@@ -115,7 +116,6 @@ namespace eosio {
         const auto &st = *existing;
         statstable.erase(st);
     };
-
 
     void token::check_account(account_name owner) {
         require_auth(_self);
