@@ -1,0 +1,6 @@
+*.hpp linguist-language=C++
+*.cpp linguist-language=C++
+*.abi linguist-language=C++
+*.wasm linguist-language=C++
+*.wast linguist-language=C++
+
