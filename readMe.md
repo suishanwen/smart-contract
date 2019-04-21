@@ -1,3 +1,6 @@
+[![HitCount](http://hits.dwyl.io/suishanwen/smart-contract.svg)](http://hits.dwyl.io/suishanwen/smart-contract)
+
+
 基于高性能区块链网络(EOS)开发去中心化应用
 
 http://bitcoinrobot.cn/#/note?source=sw&thread=95
