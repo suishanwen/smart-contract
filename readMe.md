@@ -3,17 +3,26 @@
 
 http://bitcoinrobot.cn/#/note?source=sw&thread=95
 
+
 cleos wallet unlock -n suishanwen
+
 eosiocpp -o eosio.token2.wast eosio.token2.cpp
+
 eosiocpp -g eosio.token2.abi eosio.token2.cpp
 
 
 cleos set contract bitcoinrobot ~/Documents/smart-contract/empty -p bitcoinrobot@active
+
 cleos set contract bitcoinrobot ~/Documents/smart-contract/msg -p bitcoinrobot@active
+
 cleos set contract bitcoinrobot ~/Documents/smart-contract/hello -p bitcoinrobot@active
+
 cleos set contract bitcoinrobot ~/Documents/smart-contract/table -p bitcoinrobot@active
+
 cleos set contract bitcoinrobot ~/Documents/smart-contract/note -p bitcoinrobot@active
+
 cleos set contract bitcoinrobot ~/Documents/smart-contract/eosio.token -p bitcoinrobot@active
+
 cleos set contract bitcoinrobot ~/Documents/smart-contract/eosio.token2 -p bitcoinrobot@active
 
 
@@ -22,19 +31,33 @@ cleos set contract bitcoinrobot ~/Documents/smart-contract/eosio.token2 -p bitco
 cleos push action bitcoinrobot hi '["bitcoinrobot","hello"]' -p bitcoinrobot
 
 --table
+
 cleos push action bitcoinrobot version '' -p bitcoinrobot
+
 cleos get table bitcoinrobot bitcoinrobot poll
+
 cleos get table bitcoinrobot bitcoinrobot pollvotes
+
 cleos push action bitcoinrobot addpoll '["sw","投票1"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot rmpoll '["sw","投票1"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot status '["投票1"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot statusreset '["投票1"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot addpollopt '["投票1","A"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot addpollopt '["投票1","B"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot addpollopt '["投票1","C"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot rmpollopt '["投票1",""]' -p bitcoinrobot
+
 cleos push action bitcoinrobot vote '["投票1","A","user1"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot vote '["投票1","A","user2"]' -p bitcoinrobot
+
 cleos push action bitcoinrobot vote '["投票1","B","user3"]' -p bitcoinrobot
 
 --note
@@ -43,6 +66,7 @@ cleos get table bitcoinrobot bitcoinrobot note
 
 
 --eosio.token
+
 cleos get table bitcoinrobot bitcoinrobot accounts
 
 cleos get table bitcoinrobot allinbitcoin accounts
