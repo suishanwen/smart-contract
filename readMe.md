@@ -44,8 +44,11 @@ cleos get table bitcoinrobot bitcoinrobot note
 
 --eosio.token
 cleos get table bitcoinrobot bitcoinrobot accounts
+
 cleos get table bitcoinrobot allinbitcoin accounts
+
 cleos get table bitcoinrobot SW stat
+
 cleos get table bitcoinrobot UZI stat
 
 
@@ -65,6 +68,6 @@ cleos push action bitcoinrobot transfer '[ "allinbitcoin", "bitcoinrobot", "0.00
 
 cleos push action bitcoinrobot burn '[ "allinbitcoin", "0.0001 SW" ]'  -p bitcoinrobot
 
-cleos push action bitcoinrobot burnitall '["bitcoinrobot","0.0001 UZI"]'  -p bitcoinrobot
+cleos push action bitcoinrobot burnitall '["bitcoinrobot","UZI"]'  -p bitcoinrobot
 
 cleos push action bitcoinrobot refund '["bitcoinrobot","0.0001 UZI"]'  -p bitcoinrobot
