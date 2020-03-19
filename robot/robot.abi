@@ -1,0 +1,93 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "erase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "receive",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "thread",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "tip",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "thread",
+                    "type": "uint64"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "trxid",
+                    "type": "checksum256"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "erase",
+            "type": "erase",
+            "ricardian_contract": "---\nspec-version: 0.0.1\ntitle: Erase\nsummary: This action will erase user data in the tip.\nicon:"
+        },
+        {
+            "name": "receive",
+            "type": "receive",
+            "ricardian_contract": "---\nspec-version: 0.0.1\ntitle: Receive\nsummary: This action will insert  an entry in the tip.\nicon:"
+        }
+    ],
+    "tables": [
+        {
+            "name": "tip",
+            "type": "tip",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [
+        {
+            "id": "Data Storage",
+            "body": "---\nspec-version: 0.0.1\ntitle: General Data Storage\nsummary: This smart contract will store data added by the user. The user consents to the storage of this data by signing the transaction.\nicon:"
+        }
+    ],
+    "variants": []
+}
